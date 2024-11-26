@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+:root {
+    --clr-primary: white;
+    --clr-fade: #B1B1B1;
+    --clr-bg: #000000;
+    --clr-bg-two: #000000;
+    --fs-xl: clamp(3.5rem, 3vw, 12rem);
+    --fs-heading: 3.2rem;
+    --fs-title: 1.7rem;
+    --fs-pre-title: 1rem;
+    --fs-sub-title: 0.8rem;
+    --fs-body: 1.3rem;
+    --fs-body-two: 1rem;
+    --fs-heading-mobile: 1.5rem;
+    --fs-title-mobile: 1.2rem;
+    --fs-subtitle-mobile: 1rem;
+    --fs-body-mobile: 0.8rem;
+    /* --gradient-shadow: linear-gradient(300deg, #0062ff, #DB4437, #F4B400, #0F9D58,#0062ff, #DB4437, #F4B400, #0F9D58,#0062ff, #DB4437, #F4B400, #0f989d); */
+    --gradient-shadow-two: linear-gradient(400deg, #f8ff35, #fff951, #64ff2b, #00ff84, #00ff37, #00ddff, #00ddff, #f8ff35, #fff951, #00ff26, #00ff84, #00ff04, #00ddff, #00ddff);
+    /* --gradient-shadow-two: linear-gradient(300deg, #0062ff, #DB4437, #F4B400, #0F9D58,#0062ff, #DB4437, #F4B400, #0F9D58,#0062ff, #DB4437, #F4B400, #0F9D58); */
+    /* --gradient-shadow-two: linear-gradient(400deg, #003973, #0074a2, #00a7c6, #00d4b4, #a8eb12, #ffe500); */
+    /* --gradient-shadow-two: linear-gradient(400deg, #1d3557, #457b9d, #a8dadc, #f4a261, #e76f51,#1d3557, #457b9d); */
+
+
+
+}
+
+#root {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    padding-top: 4.8rem;
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 880px) {
+    .container {
+        width: 100%;
+        padding: 0 1.6rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    background: var(--clr-bg);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--clr-bg);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--clr-bg-two);
+    border-radius: 2px;
+}
+
+@keyframes pulseShadow {
+
+    0%,
+    100% {
+        text-shadow: 15px 15px 30px #1446a0;
+    }
+
+    50% {
+        text-shadow: 15px 15px 0px #1446a0;
+
+    }
+}
+
+/* .special-shadow {
+    animation: pulseShadow 3s infinite;
+    
+  } */
+.special-shadow {
+    text-shadow: 05px 05px 100px #1446a0;
+}
